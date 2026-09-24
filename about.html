@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ประวัติส่วนตัว การศึกษา และเป้าหมายการทำงานของ เมธาวี อัครศิลป์ (MayuiFy) นักศึกษาสาขาสื่อนฤมิต (Creative Media)">
+  <meta name="author" content="MayuiFy">
+  <title>About Me | MayukiFy - Creative Media Student</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Custom CSS Files -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+</head>
+
+<body>
+
+  <!-- ================================================================
+       0. PRELOADER ANIMATION
+       ================================================================ -->
+  <div id="preloader">
+    <div class="preloader-spinner">
+      <div class="spinner-ring"></div>
+      <div class="spinner-ring"></div>
+      <div class="spinner-ring"></div>
+    </div>
+    <div class="preloader-text">ABOUT ME</div>
+  </div>
+
+  <!-- ================================================================
+       1. NAVIGATION BAR
+       ================================================================ -->
+  <header>
+    <nav class="navbar-custom" id="mainNavbar">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- Logo Brand -->
+        <a href="index.html" class="navbar-brand-custom">
+          <div class="brand-icon-wrapper">
+            <i class="fa-solid fa-shapes"></i>
+          </div>
+          <div class="brand-text">Mayuki<span>Fy</span></div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="navbar-nav-custom d-none d-lg-flex">
+          <li><a href="index.html" class="nav-link-custom">Home</a></li>
+          <li><a href="about.html" class="nav-link-custom active">About</a></li>
+          <li><a href="skills.html" class="nav-link-custom">Skills</a></li>
+          <li><a href="portfolio.html" class="nav-link-custom">Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link-custom">Contact</a></li>
+        </ul>
+
+        <!-- Action Items -->
+        <div class="d-flex align-items-center gap-3">
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="สลับโหมดกลางวัน/กลางคืน">
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+          </button>
+          <button class="navbar-toggler-custom d-lg-none" id="navbarToggler" aria-label="เปิดเมนูนำทาง">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Offcanvas Menu -->
+    <div class="nav-backdrop" id="navBackdrop"></div>
+    <div class="nav-collapse-wrapper" id="navCollapse">
+      <div>
+        <div class="d-flex justify-content-between align-items-center pb-3 border-bottom border-secondary border-opacity-25">
+          <a href="index.html" class="navbar-brand-custom">
+            <div class="brand-icon-wrapper">
+              <i class="fa-solid fa-shapes"></i>
+            </div>
+            <div class="brand-text">Mayuki<span>Fy</span></div>
+          </a>
+          <button class="mobile-close-btn" id="navCloseBtn" aria-label="ปิดเมนูนำทาง">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <ul class="navbar-nav-custom">
+          <li><a href="index.html" class="nav-link-custom"><i class="fa-solid fa-house-chimney me-2 text-primary"></i> Home</a></li>
+          <li><a href="about.html" class="nav-link-custom active"><i class="fa-solid fa-user-astronaut me-2 text-primary"></i> About</a></li>
+          <li><a href="skills.html" class="nav-link-custom"><i class="fa-solid fa-cubes me-2 text-primary"></i> Skills</a></li>
+          <li><a href="portfolio.html" class="nav-link-custom"><i class="fa-solid fa-briefcase me-2 text-primary"></i> Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link-custom"><i class="fa-solid fa-paper-plane me-2 text-primary"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="pt-4 border-top border-secondary border-opacity-25">
+        <small class="text-muted d-block mb-2">Student of Creative Media</small>
+        <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-50 py-2 px-3 rounded-pill">
+          <i class="fa-solid fa-circle-check me-1"></i> พร้อมรับงานฝึกงาน 2026
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================================================================
+       2. PAGE BANNER HEADER
+       ================================================================ -->
+  <section class="page-banner">
+    <div class="container reveal">
+      <div class="page-breadcrumb">
+        <a href="index.html"><i class="fa-solid fa-house me-1"></i> หน้าแรก</a>
+        <span>/</span>
+        <span class="text-secondary fw-bold">About Me</span>
+      </div>
+      <h1 class="page-banner-title">
+        ทำความรู้จัก <span class="gradient-text">ตัวตนและวิสัยทัศน์</span>
+      </h1>
+      <p class="section-subtitle">
+        เปิดมุมมองทางความคิด ประวัติการศึกษาสาขาสื่อนฤมิต ความสนใจในนวัตกรรมสื่อสร้างสรรค์ และเป้าหมายบนเส้นทางสายอาชีพ
+      </p>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       3. ABOUT DETAILS (4 PILLARS)
+       ================================================================ -->
+  <section class="about-section pt-0" id="about">
+    <div class="container">
+      <!-- Profile Highlight Card -->
+      <div class="glass-card p-4 p-md-5 mb-5 reveal">
+        <div class="row align-items-center">
+          <div class="col-lg-3 text-center mb-4 mb-lg-0">
+            <div style="width: 170px; height: 170px; margin: 0 auto; position: relative;">
+              <div class="profile-glow-ring" style="inset: -8px;"></div>
+              <img src="assets/images/profile-placeholder.svg" alt="MayuiFy Profile" class="img-fluid rounded-circle position-relative" style="z-index: 2; border: 2px solid var(--primary); width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
+              <h2 class="h3 fw-bold mb-0">นัฐภูมิ ธงศรี</h2>
+              <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-50 rounded-pill px-3 py-1">Creative Media Student</span>
+            </div>
+            <p class="lead text-primary mb-3 fw-semibold">
+              "เปลี่ยนแนวคิดที่เป็นนามธรรม ให้กลายเป็นประสบการณ์ดิจิทัลที่ผู้คนสัมผัสได้จริง"
+            </p>
+            <p class="text-muted mb-0">
+              ในฐานะนักศึกษาสาขาสื่อนฤมิต ผมเชื่อว่าการออกแบบไม่ได้เป็นเพียงแค่เรื่องของความสวยงาม แต่คือการสื่อสาร การแก้ปัญหา และการสร้างความผูกพันทางอารมณ์ระหว่างผู้ใช้กับสารที่ต้องการสื่อ โดยใช้เครื่องมือตั้งแต่ภาพถ่าย วิดีโอ โมชันกราฟิก จนถึงโค้ด Front-end ในการถ่ายทอดเรื่องราว
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- About 4 Pillars Grid -->
+      <div class="about-grid">
+        <!-- 1. Bio & Philosophy (Span 7) -->
+        <div class="glass-card about-card card-bio reveal">
+          <div class="about-card-icon icon-cyan">
+            <i class="fa-solid fa-user-astronaut"></i>
+          </div>
+          <h3 class="about-card-title">ประวัติย่อ &amp; ปรัชญาการสร้างสรรค์</h3>
+          <p>
+            ผมเป็นนักศึกษาปีสุดท้าย สาขาวิชา <strong>สื่อนฤมิต (Creative Media)</strong> ผู้หลงใหลในความกลมกลืนระหว่างศิลปะและเทคโนโลยีคอมพิวเตอร์
+          </p>
+          <p>
+            ผมฝึกฝนการเล่าเรื่องผ่านสื่อมัลติมีเดียแบบครบวงจร ตั้งแต่งานภาพนิ่ง ภาพเคลื่อนไหว ไปจนถึงการเขียนโปรแกรมเชิงสร้างสรรค์ (Creative Coding) เพื่อสร้างผลงานที่มีเอกลักษณ์ ไม่ซ้ำใคร และใช้งานได้จริงอย่างมีประสิทธิภาพ
+          </p>
+          <div class="bio-quote">
+            <i class="fa-solid fa-quote-left me-2 text-secondary"></i>
+            "Design creates culture. Culture shapes values. Values determine the future."
+          </div>
+        </div>
+
+        <!-- 2. Education (Span 5) -->
+        <div class="glass-card about-card card-education reveal reveal-delay-1">
+          <div class="about-card-icon icon-pink">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3 class="about-card-title">การศึกษา (Education)</h3>
+          
+          <div class="timeline-item">
+            <span class="timeline-year">2022 - ปัจจุบัน (2026)</span>
+            <h4 class="timeline-degree">ปริญญาตรี ศิลปกรรมศาสตรบัณฑิต</h4>
+            <p class="timeline-school">
+              สาขาสื่อนฤมิต (Creative Media)<br>
+              คณะวิทยาการสารสนเทศ<br>
+              <strong>เกรดเฉลี่ยสะสม: 2.00</strong>
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-year">2016 - 2022</span>
+            <h4 class="timeline-degree">มัธยมศึกษาตอนปลาย</h4>
+            <p class="timeline-school">
+              แผนการเรียน วิทย์-คณิต &amp; เทคโนโลยีดิจิทัล
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Interests (Span 5) -->
+        <div class="glass-card about-card card-interests reveal">
+          <div class="about-card-icon icon-purple">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <h3 class="about-card-title">ความสนใจ (Interests &amp; Passions)</h3>
+          <p>ขอบเขตความรู้และเทคโนโลยีที่ผมศึกษาและทดลองอย่างต่อเนื่อง:</p>
+          
+          <div class="interest-tags">
+            <span class="interest-tag"><i class="fa-solid fa-cubes"></i> 3D &amp; WebGL</span>
+            <span class="interest-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Motion Graphics</span>
+            <span class="interest-tag"><i class="fa-solid fa-robot"></i> Generative AI</span>
+            <span class="interest-tag"><i class="fa-solid fa-mobile-screen"></i> Human-Centered UX</span>
+            <span class="interest-tag"><i class="fa-solid fa-camera-retro"></i> Cyber-Noir Photography</span>
+            <span class="interest-tag"><i class="fa-solid fa-music"></i> Sound Design</span>
+          </div>
+        </div>
+
+        <!-- 4. Career Goals (Span 7) -->
+        <div class="glass-card about-card card-goals reveal reveal-delay-1">
+          <div class="about-card-icon icon-cyan">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3 class="about-card-title">เป้าหมายในการทำงาน (Career Goals)</h3>
+          
+          <ul class="goals-list">
+            <li class="goal-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span><strong>ระยะสั้น (Short-term):</strong> เข้าฝึกงานและร่วมงานกับ Creative Agency หรือ Tech Studio ชั้นนำ เพื่อประยุกต์ทักษะ Front-end และ Motion ในโปรเจกต์ระดับมืออาชีพจริง</span>
+            </li>
+            <li class="goal-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span><strong>ระยะกลาง (Mid-term):</strong> เติบโตสู่บทบาท <strong>Creative Technologist / Senior UI/UX Designer</strong> ที่สามารถเชื่อมช่องว่างระหว่างทีมดีไซเนอร์และทีมวิศวกรซอฟต์แวร์ได้อย่างไร้รอยต่อ</span>
+            </li>
+            <li class="goal-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span><strong>ระยะยาว (Long-term):</strong> สร้างสตูดิโอสื่อสร้างสรรค์และนวัตกรรมเชิงทดลอง (Creative Innovation Lab) เพื่อพัฒนาประสบการณ์สื่ออินเทอร์แอคทีฟระดับสากล</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Navigation Next Step CTA -->
+      <div class="glass-card p-4 p-md-5 mt-5 text-center reveal">
+        <h3 class="h4 fw-bold mb-3">ต้องการดูความสามารถทางเทคนิคและทักษะของผม?</h3>
+        <p class="text-muted mb-4 max-w-600 mx-auto">
+          ไปดู 10 ทักษะด้านสื่อนฤมิต ทั้งงานดีไซน์ โมชัน เว็บ และเครื่องมือ AI ในหน้าถัดไป
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="skills.html" class="btn-creative-primary">
+            สำรวจทักษะทั้งหมด (Skills) <i class="fa-solid fa-arrow-right ms-2"></i>
+          </a>
+          <a href="portfolio.html" class="btn-creative-outline">
+            ชมแฟ้มผลงาน (Portfolio)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       4. FOOTER
+       ================================================================ -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="mb-3">
+        <a href="index.html" class="navbar-brand-custom justify-content-center">
+          <div class="brand-icon-wrapper" style="width: 34px; height: 34px; font-size: 0.95rem;">
+            <i class="fa-solid fa-shapes"></i>
+          </div>
+          <div class="brand-text fs-5">Mayuki<span>Fy</span></div>
+        </a>
+      </div>
+      <p class="footer-text">&copy; 2026 My Portfolio &bull; All Rights Reserved.</p>
+      <p class="footer-credit">Designed by <span>MayukiFy</span> (Creative Media Student)</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="เลื่อนกลับขึ้นด้านบน" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+/**
+ * ====================================================================
+ * CONTACT.CSS - Contact Cards, Social Icons, Form & Footer
+ * Project: Creative Media Student Portfolio (MayuiFy)
+ * ====================================================================
+ */
+
+.contact-section {
+  position: relative;
+  padding: 100px 0 60px 0;
+  background: transparent;
+  z-index: 2;
+}
+
+/* Contact Info Side */
+.contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-info-card {
+  padding: 1.6rem;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  transition: all var(--transition-normal);
+}
+
+.contact-info-card:hover {
+  transform: translateX(8px);
+}
+
+.contact-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.contact-info-text h5 {
+  font-size: 1.05rem;
+  margin-bottom: 2px;
+}
+
+.contact-info-text p {
+  font-size: 0.92rem;
+  margin: 0;
+  color: var(--text-muted);
+}
+
+/* Copy Email Button */
+.btn-copy-email {
+  background: var(--grad-subtle);
+  border: 1px solid rgba(0, 210, 255, 0.3);
+  color: var(--primary);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: auto;
+  transition: all var(--transition-fast);
+}
+
+.btn-copy-email:hover {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+/* Social Media Icons Grid */
+.social-links-wrapper {
+  margin-top: 1.5rem;
+}
+
+.social-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.social-icons-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-link-item {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  transition: all var(--transition-normal);
+}
+
+/* Brand-specific hover colors */
+.social-link-item.facebook:hover {
+  background: #1877f2;
+  color: #ffffff;
+  border-color: #1877f2;
+  box-shadow: 0 0 15px rgba(24, 119, 242, 0.5);
+  transform: translateY(-4px);
+}
+
+.social-link-item.instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 0 15px rgba(214, 36, 159, 0.5);
+  transform: translateY(-4px);
+}
+
+.social-link-item.github:hover {
+  background: #24292e;
+  color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+.social-link-item.behance:hover {
+  background: #0057ff;
+  color: #ffffff;
+  border-color: #0057ff;
+  box-shadow: 0 0 15px rgba(0, 87, 255, 0.5);
+  transform: translateY(-4px);
+}
+
+.social-link-item.email:hover {
+  background: var(--secondary);
+  color: #ffffff;
+  border-color: var(--secondary);
+  box-shadow: var(--glow-pink);
+  transform: translateY(-4px);
+}
+
+/* Contact Form Styling */
+.contact-form-card {
+  padding: 2.5rem;
+  border-radius: 24px;
+}
+
+.form-group-custom {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.form-label-custom {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.form-control-custom {
+  width: 100%;
+  padding: 12px 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  color: var(--text-main);
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  transition: all var(--transition-normal);
+}
+
+[data-theme="light"] .form-control-custom {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.form-control-custom:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: rgba(0, 210, 255, 0.04);
+  box-shadow: 0 0 0 4px rgba(0, 210, 255, 0.15);
+}
+
+.form-control-custom::placeholder {
+  color: var(--text-dim);
+}
+
+/* Footer Section */
+.footer-custom {
+  position: relative;
+  padding: 40px 0 30px 0;
+  margin-top: 60px;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  text-align: center;
+}
+
+.footer-custom::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: var(--grad-primary);
+  filter: blur(1px);
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.footer-credit {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.footer-credit span {
+  font-weight: 700;
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

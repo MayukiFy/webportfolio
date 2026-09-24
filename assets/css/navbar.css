@@ -1,0 +1,224 @@
+/**
+ * ====================================================================
+ * NAVBAR.CSS - Navigation Bar, Brand, Links & Theme Toggle
+ * Project: Creative Media Student Portfolio (MayuiFy)
+ * ====================================================================
+ */
+
+.navbar-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+  padding: 1.25rem 0;
+  background: transparent;
+  transition: all var(--transition-normal);
+}
+
+/* Glassmorphic Navbar on Scroll */
+.navbar-custom.scrolled {
+  padding: 0.8rem 0;
+  background: var(--nav-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Brand Logo */
+.navbar-brand-custom {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-icon-wrapper {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--grad-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 210, 255, 0.4);
+  transition: transform var(--transition-normal);
+}
+
+.navbar-brand-custom:hover .brand-icon-wrapper {
+  transform: rotate(10deg) scale(1.08);
+}
+
+.brand-text span {
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Nav Items */
+.navbar-nav-custom {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link-custom {
+  position: relative;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 0.5rem 0;
+  transition: color var(--transition-fast);
+  text-decoration: none;
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--grad-primary);
+  border-radius: 2px;
+  transition: width var(--transition-normal), left var(--transition-normal);
+}
+
+.nav-link-custom:hover {
+  color: var(--text-main);
+}
+
+.nav-link-custom:hover::after,
+.nav-link-custom.active::after {
+  width: 100%;
+  left: 0;
+}
+
+.nav-link-custom.active {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.theme-toggle-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: scale(1.08) rotate(15deg);
+  box-shadow: var(--glow-cyan);
+}
+
+/* Mobile Toggler */
+.navbar-toggler-custom {
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-main);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: none;
+  transition: all var(--transition-fast);
+}
+
+.navbar-toggler-custom:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* Responsive Navigation for Mobile/Tablet */
+@media (max-width: 991.98px) {
+  .navbar-toggler-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-collapse-wrapper {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 290px;
+    height: 100vh;
+    background: var(--modal-bg);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-left: 1px solid var(--border-color);
+    padding: 2.5rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: right var(--transition-smooth);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.4);
+    z-index: 1060;
+  }
+
+  .nav-collapse-wrapper.show {
+    right: 0;
+  }
+
+  .nav-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 1055;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+  }
+
+  .nav-backdrop.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar-nav-custom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .nav-link-custom {
+    font-size: 1.15rem;
+    width: 100%;
+    display: block;
+  }
+
+  .mobile-close-btn {
+    align-self: flex-end;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    cursor: pointer;
+  }
+}

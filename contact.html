@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ติดต่อ เมธาวี อัครศิลป์ (MayuiFy) นักศึกษาสาขาสื่อนฤมิต สำหรับงานฝึกงาน โปรเจกต์ฟรีแลนซ์ หรือการร่วมงานครีเอทีฟ">
+  <meta name="author" content="MayuiFy">
+  <title>Contact Me | MayukiFy - Creative Media Student</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Custom CSS Files -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+
+<body>
+
+  <!-- ================================================================
+       0. PRELOADER ANIMATION
+       ================================================================ -->
+  <div id="preloader">
+    <div class="preloader-spinner">
+      <div class="spinner-ring"></div>
+      <div class="spinner-ring"></div>
+      <div class="spinner-ring"></div>
+    </div>
+    <div class="preloader-text">CONTACT ME</div>
+  </div>
+
+  <!-- ================================================================
+       1. NAVIGATION BAR
+       ================================================================ -->
+  <header>
+    <nav class="navbar-custom" id="mainNavbar">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- Logo Brand -->
+        <a href="index.html" class="navbar-brand-custom">
+          <div class="brand-icon-wrapper">
+            <i class="fa-solid fa-shapes"></i>
+          </div>
+          <div class="brand-text">Mayuki<span>Fy</span></div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="navbar-nav-custom d-none d-lg-flex">
+          <li><a href="index.html" class="nav-link-custom">Home</a></li>
+          <li><a href="about.html" class="nav-link-custom">About</a></li>
+          <li><a href="skills.html" class="nav-link-custom">Skills</a></li>
+          <li><a href="portfolio.html" class="nav-link-custom">Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link-custom active">Contact</a></li>
+        </ul>
+
+        <!-- Action Items -->
+        <div class="d-flex align-items-center gap-3">
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="สลับโหมดกลางวัน/กลางคืน">
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+          </button>
+          <button class="navbar-toggler-custom d-lg-none" id="navbarToggler" aria-label="เปิดเมนูนำทาง">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Offcanvas Menu -->
+    <div class="nav-backdrop" id="navBackdrop"></div>
+    <div class="nav-collapse-wrapper" id="navCollapse">
+      <div>
+        <div class="d-flex justify-content-between align-items-center pb-3 border-bottom border-secondary border-opacity-25">
+          <a href="index.html" class="navbar-brand-custom">
+            <div class="brand-icon-wrapper">
+              <i class="fa-solid fa-shapes"></i>
+            </div>
+            <div class="brand-text">Mayui<span>Fy</span></div>
+          </a>
+          <button class="mobile-close-btn" id="navCloseBtn" aria-label="ปิดเมนูนำทาง">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <ul class="navbar-nav-custom">
+          <li><a href="index.html" class="nav-link-custom"><i class="fa-solid fa-house-chimney me-2 text-primary"></i> Home</a></li>
+          <li><a href="about.html" class="nav-link-custom"><i class="fa-solid fa-user-astronaut me-2 text-primary"></i> About</a></li>
+          <li><a href="skills.html" class="nav-link-custom"><i class="fa-solid fa-cubes me-2 text-primary"></i> Skills</a></li>
+          <li><a href="portfolio.html" class="nav-link-custom"><i class="fa-solid fa-briefcase me-2 text-primary"></i> Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link-custom active"><i class="fa-solid fa-paper-plane me-2 text-primary"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="pt-4 border-top border-secondary border-opacity-25">
+        <small class="text-muted d-block mb-2">Student of Creative Media</small>
+        <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-50 py-2 px-3 rounded-pill">
+          <i class="fa-solid fa-circle-check me-1"></i> พร้อมรับงานฝึกงาน 2026
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================================================================
+       2. PAGE BANNER HEADER
+       ================================================================ -->
+  <section class="page-banner">
+    <div class="container reveal">
+      <div class="page-breadcrumb">
+        <a href="index.html"><i class="fa-solid fa-house me-1"></i> หน้าแรก</a>
+        <span>/</span>
+        <span class="text-secondary fw-bold">Contact</span>
+      </div>
+      <h1 class="page-banner-title">
+        ติดต่อและ <span class="gradient-text">ร่วมสร้างสรรค์ผลงาน</span>
+      </h1>
+      <p class="section-subtitle">
+        ยินดีต้อนรับทุกโอกาส ไม่ว่าจะเป็นการฝึกงาน โปรเจกต์ฟรีแลนซ์ หรืองานครีเอทีฟมัลติมีเดีย สามารถส่งข้อความหรือติดต่อทางโซเชียลได้ตลอดเวลาครับ
+      </p>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       3. CONTACT SECTION CONTENT
+       ================================================================ -->
+  <section class="contact-section pt-0" id="contact">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Left Column: Contact Channels & Socials -->
+        <div class="col-lg-5 reveal">
+          <div class="contact-info-wrapper">
+            <!-- Email Info Card -->
+            <div class="glass-card contact-info-card">
+              <div class="contact-icon-box icon-cyan-box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>Email Address</h5>
+                <p id="emailAddressText">whan0614844@gmail.com</p>
+              </div>
+              <button class="btn-copy-email" id="copyEmailBtn" title="คลิกเพื่อคัดลอกอีเมล">
+                <i class="fa-regular fa-copy me-1"></i> คัดลอก
+              </button>
+            </div>
+
+            <!-- Location / Campus Card -->
+            <div class="glass-card contact-info-card">
+              <div class="contact-icon-box icon-pink-box">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>Location &amp; Work Mode</h5>
+                <p>กรุงเทพมหานคร, ประเทศไทย (พร้อมทำงานแบบ On-site / Remote / Hybrid)</p>
+              </div>
+            </div>
+
+            <!-- Current Status Card -->
+            <div class="glass-card contact-info-card">
+              <div class="contact-icon-box icon-purple-box">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>Current Status</h5>
+                <p><span class="text-success fw-bold">● Available</span> สำหรับการฝึกงานภาคฤดูร้อน &amp; งานสร้างสรรค์ 2026</p>
+              </div>
+            </div>
+
+            <!-- Social Media Handles (Facebook, Instagram, GitHub, Behance) -->
+            <div class="social-links-wrapper">
+              <h5 class="social-title">Social Channels &amp; Profiles</h5>
+              <div class="social-icons-list">
+                <!-- Email Direct -->
+                <a href="mailto:mayuify.creative@gmail.com" class="social-link-item email" title="Send Email" aria-label="Email">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <!-- Facebook -->
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link-item facebook" title="Facebook" aria-label="Facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link-item instagram" title="Instagram" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link-item github" title="GitHub" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <!-- Behance -->
+                <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-link-item behance" title="Behance" aria-label="Behance">
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Quick FAQ Card -->
+            <div class="glass-card p-4 mt-3">
+              <h6 class="fw-bold mb-2 text-primary"><i class="fa-solid fa-clock me-1"></i> เวลาตอบกลับโดยเฉลี่ย</h6>
+              <p class="small text-muted mb-0">
+                ผมจะตอบกลับข้อความและอีเมลทุกฉบับภายใน <strong>24 ชั่วโมง</strong> ครับ สำหรับเรื่องเร่งด่วนสามารถทักทาง Social Media ได้ทันที
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Contact Form -->
+        <div class="col-lg-7 reveal reveal-delay-1">
+          <div class="glass-card contact-form-card">
+            <h3 class="h4 fw-bold mb-2">
+              ส่งข้อความหาผม <span class="gradient-text">ได้โดยตรง</span>
+            </h3>
+            <p class="text-muted mb-4 small">
+              กรอกข้อมูลด้านล่างเพื่อส่งรายละเอียดความสนใจ โครงการ หรือข้อเสนอการฝึกงาน
+            </p>
+
+            <!-- Alert Container for Form Submissions -->
+            <div id="formAlert" style="display: none;"></div>
+
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6 form-group-custom">
+                  <label for="senderName" class="form-label-custom">ชื่อของคุณ (Name) *</label>
+                  <input type="text" class="form-control-custom" id="senderName" placeholder="เช่น กานต์ หรือ บริษัท / องค์กร..." required>
+                </div>
+
+                <div class="col-md-6 form-group-custom">
+                  <label for="senderEmail" class="form-label-custom">อีเมลติดต่อกลับ (Email) *</label>
+                  <input type="email" class="form-control-custom" id="senderEmail" placeholder="yourname@domain.com" required>
+                </div>
+
+                <div class="col-12 form-group-custom">
+                  <label for="senderSubject" class="form-label-custom">หัวข้อที่ต้องการติดต่อ (Subject) *</label>
+                  <input type="text" class="form-control-custom" id="senderSubject" placeholder="เช่น ติดต่อสัมภาษณ์ฝึกงาน, จ้างงานฟรีแลนซ์, ชวนคุยโปรเจกต์" required>
+                </div>
+
+                <div class="col-12 form-group-custom">
+                  <label for="senderMessage" class="form-label-custom">ข้อความหรือรายละเอียด (Message) *</label>
+                  <textarea class="form-control-custom" id="senderMessage" rows="5" placeholder="พิมพ์ข้อความ คำถาม หรือรายละเอียดที่ต้องการคุยที่นี่..." required></textarea>
+                </div>
+
+                <div class="col-12 mt-2">
+                  <button type="submit" class="btn-creative-primary w-100" id="submitBtn">
+                    <i class="fa-regular fa-paper-plane me-2"></i> ส่งข้อความทันที (Send Message)
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       4. FOOTER
+       ================================================================ -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="mb-3">
+        <a href="index.html" class="navbar-brand-custom justify-content-center">
+          <div class="brand-icon-wrapper" style="width: 34px; height: 34px; font-size: 0.95rem;">
+            <i class="fa-solid fa-shapes"></i>
+          </div>
+          <div class="brand-text fs-5">Mayuki<span>Fy</span></div>
+        </a>
+      </div>
+      <p class="footer-text">&copy; 2026 My Portfolio &bull; All Rights Reserved.</p>
+      <p class="footer-credit">Designed by <span>MayukiFy</span> (Creative Media Student)</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="เลื่อนกลับขึ้นด้านบน" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>

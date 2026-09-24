@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#141a2e" />
+      <stop offset="100%" stop-color="#1f112e" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2ff" />
+      <stop offset="50%" stop-color="#7928ca" />
+      <stop offset="100%" stop-color="#ff52a2" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0844" />
+      <stop offset="100%" stop-color="#ffb199" />
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="600" height="600" rx="300" fill="url(#bgGrad)" />
+
+  <!-- Ambient Glow Orbs -->
+  <circle cx="200" cy="180" r="140" fill="#00d2ff" opacity="0.25" filter="url(#softGlow)" />
+  <circle cx="420" cy="380" r="160" fill="#ff52a2" opacity="0.25" filter="url(#softGlow)" />
+
+  <!-- Decorative Orbit Rings -->
+  <circle cx="300" cy="300" r="260" stroke="url(#primaryGrad)" stroke-width="2" stroke-dasharray="10 15" fill="none" opacity="0.6"/>
+  <circle cx="300" cy="300" r="230" stroke="#00d2ff" stroke-width="1.5" stroke-dasharray="4 8" fill="none" opacity="0.4"/>
+
+  <!-- Character Silhouette & Creative Visual Element -->
+  <!-- Shoulders / Body -->
+  <path d="M160 520 C 170 410, 240 370, 300 370 C 360 370, 430 410, 440 520 Z" fill="url(#primaryGrad)" opacity="0.9" />
+
+  <!-- Head & Hair Base -->
+  <circle cx="300" cy="260" r="85" fill="#f8fafc" opacity="0.95" />
+  
+  <!-- Creative Headset / Headphones -->
+  <path d="M210 260 C 210 160, 390 160, 390 260" stroke="url(#cyanGrad)" stroke-width="14" stroke-linecap="round" fill="none" filter="url(#softGlow)" />
+  <rect x="200" y="240" width="22" height="50" rx="10" fill="#00d2ff" />
+  <rect x="378" y="240" width="22" height="50" rx="10" fill="#ff52a2" />
+
+  <!-- Stylized Hair -->
+  <path d="M225 240 C 220 180, 280 160, 320 165 C 370 170, 385 210, 375 250 C 345 200, 260 215, 225 240 Z" fill="#1e293b" />
+  <path d="M260 170 C 310 130, 365 175, 360 210 C 340 185, 300 175, 260 170 Z" fill="url(#pinkGrad)" />
+
+  <!-- Glasses / Creative AR Visor -->
+  <rect x="245" y="245" width="45" height="26" rx="8" fill="#0f172a" stroke="#00d2ff" stroke-width="3" />
+  <rect x="310" y="245" width="45" height="26" rx="8" fill="#0f172a" stroke="#ff52a2" stroke-width="3" />
+  <line x1="290" y1="258" x2="310" y2="258" stroke="#ffffff" stroke-width="3" />
+  <!-- Lens Flare inside glasses -->
+  <line x1="252" y1="265" x2="265" y2="250" stroke="#00d2ff" stroke-width="2" stroke-linecap="round" />
+  <line x1="317" y1="265" x2="330" y2="250" stroke="#ff52a2" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Smile / Expression -->
+  <path d="M285 295 Q 300 310 315 295" stroke="#334155" stroke-width="3" stroke-linecap="round" fill="none" />
+
+  <!-- Floating Creative Icons / Elements -->
+  <!-- 3D Cube / Media badge -->
+  <g transform="translate(100, 150) scale(0.8)">
+    <polygon points="30,5 55,20 30,35 5,20" fill="#00d2ff" opacity="0.8"/>
+    <polygon points="5,20 30,35 30,65 5,50" fill="#008cb3" opacity="0.9"/>
+    <polygon points="55,20 30,35 30,65 55,50" fill="#5ce1e6" opacity="0.9"/>
+  </g>
+
+  <!-- Sparkles / Stars -->
+  <path d="M470 160 Q 485 160 485 145 Q 485 160 500 160 Q 485 160 485 175 Q 485 160 470 160 Z" fill="#ff52a2" filter="url(#softGlow)"/>
+  <path d="M440 240 Q 450 240 450 230 Q 450 240 460 240 Q 450 240 450 250 Q 450 240 440 240 Z" fill="#00d2ff"/>
+  <circle cx="150" cy="380" r="6" fill="#ff52a2" />
+  <circle cx="450" cy="420" r="8" fill="#00d2ff" />
+
+  <!-- Label Overlay at Bottom -->
+  <g transform="translate(150, 480)">
+    <rect width="300" height="46" rx="23" fill="rgba(15, 23, 42, 0.85)" stroke="url(#primaryGrad)" stroke-width="2"/>
+    <text x="150" y="29" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="16" text-anchor="middle" letter-spacing="2">
+      CREATIVE MEDIA STUDENT
+    </text>
+  </g>
+</svg>

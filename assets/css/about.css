@@ -1,0 +1,241 @@
+/**
+ * ====================================================================
+ * ABOUT.CSS - About Me, Education, Interests & Career Goals
+ * Project: Creative Media Student Portfolio (MayuiFy)
+ * ====================================================================
+ */
+
+.about-section {
+  position: relative;
+  padding: 100px 0;
+  background: transparent;
+  z-index: 2;
+}
+
+/* About Grid Layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.8rem;
+}
+
+/* Base About Card */
+.about-card {
+  padding: 2.2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--grad-primary);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.about-card:hover::before {
+  opacity: 1;
+}
+
+.about-card-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.4rem;
+  transition: transform var(--transition-normal);
+}
+
+.about-card:hover .about-card-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.icon-cyan {
+  background: rgba(0, 210, 255, 0.12);
+  color: var(--primary);
+  border: 1px solid rgba(0, 210, 255, 0.3);
+}
+
+.icon-pink {
+  background: rgba(255, 82, 162, 0.12);
+  color: var(--secondary);
+  border: 1px solid rgba(255, 82, 162, 0.3);
+}
+
+.icon-purple {
+  background: rgba(155, 81, 224, 0.12);
+  color: var(--accent-purple);
+  border: 1px solid rgba(155, 81, 224, 0.3);
+}
+
+.about-card-title {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 1. Bio Card (Span 7 col) */
+.card-bio {
+  grid-column: span 7;
+}
+
+.bio-quote {
+  padding: 1rem 1.2rem;
+  border-left: 3px solid var(--secondary);
+  background: var(--grad-subtle);
+  border-radius: 0 12px 12px 0;
+  margin-top: 1.2rem;
+  font-style: italic;
+  color: var(--text-main);
+  font-size: 0.95rem;
+}
+
+/* 2. Education Card (Span 5 col) */
+.card-education {
+  grid-column: span 5;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 1.2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 8px var(--primary);
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 20px;
+  width: 2px;
+  height: calc(100% - 10px);
+  background: var(--border-color);
+}
+
+.timeline-item:last-child::after {
+  display: none;
+}
+
+.timeline-year {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.timeline-degree {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin: 3px 0;
+}
+
+.timeline-school {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* 3. Interests Card (Span 5 col) */
+.card-interests {
+  grid-column: span 5;
+}
+
+.interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 0.8rem;
+}
+
+.interest-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 50px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  font-size: 0.88rem;
+  color: var(--text-main);
+  transition: all var(--transition-fast);
+}
+
+.interest-tag:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: var(--glow-cyan);
+}
+
+.interest-tag i {
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+
+/* 4. Career Goals Card (Span 7 col) */
+.card-goals {
+  grid-column: span 7;
+}
+
+.goals-list {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.goal-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 1rem;
+}
+
+.goal-item i {
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-top: 4px;
+}
+
+.goal-item span {
+  font-size: 0.96rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.goal-item strong {
+  color: var(--text-main);
+}
+
+/* Responsive Breakpoints for About Grid */
+@media (max-width: 991.98px) {
+  .card-bio,
+  .card-education,
+  .card-interests,
+  .card-goals {
+    grid-column: span 12;
+  }
+}

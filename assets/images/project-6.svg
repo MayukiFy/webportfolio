@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p6-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c1a"/>
+      <stop offset="50%" stop-color="#190e2b"/>
+      <stop offset="100%" stop-color="#0a1a36"/>
+    </linearGradient>
+    <linearGradient id="p6-ai" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d2ff"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ff52a2"/>
+    </linearGradient>
+    <filter id="p6-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#p6-bg)"/>
+
+  <!-- Neural Network Connections -->
+  <g stroke="rgba(0, 210, 255, 0.3)" stroke-width="1.5">
+    <line x1="200" y1="160" x2="320" y2="120"/>
+    <line x1="200" y1="160" x2="320" y2="220"/>
+    <line x1="200" y1="280" x2="320" y2="220"/>
+    <line x1="200" y1="280" x2="320" y2="320"/>
+    <line x1="320" y1="120" x2="480" y2="140"/>
+    <line x1="320" y1="220" x2="480" y2="220"/>
+    <line x1="320" y1="320" x2="480" y2="280"/>
+    <line x1="480" y1="140" x2="600" y2="200"/>
+    <line x1="480" y1="220" x2="600" y2="200"/>
+    <line x1="480" y1="280" x2="600" y2="240"/>
+  </g>
+
+  <!-- Glowing Neural Nodes -->
+  <circle cx="200" cy="160" r="10" fill="#00d2ff" filter="url(#p6-glow)"/>
+  <circle cx="200" cy="280" r="10" fill="#00d2ff" filter="url(#p6-glow)"/>
+  <circle cx="320" cy="120" r="12" fill="#a855f7" filter="url(#p6-glow)"/>
+  <circle cx="320" cy="220" r="14" fill="#00d2ff" filter="url(#p6-glow)"/>
+  <circle cx="320" cy="320" r="12" fill="#ff52a2" filter="url(#p6-glow)"/>
+  <circle cx="480" cy="140" r="14" fill="#00d2ff" filter="url(#p6-glow)"/>
+  <circle cx="480" cy="220" r="18" fill="url(#p6-ai)" filter="url(#p6-glow)"/>
+  <circle cx="480" cy="280" r="14" fill="#ff52a2" filter="url(#p6-glow)"/>
+  <circle cx="600" cy="200" r="12" fill="#ff52a2" filter="url(#p6-glow)"/>
+  <circle cx="600" cy="240" r="10" fill="#00d2ff" filter="url(#p6-glow)"/>
+
+  <!-- AI Brain / Sparkle Icon in Center Core -->
+  <g transform="translate(460, 200)" filter="url(#p6-glow)">
+    <path d="M 20 0 Q 30 10 40 20 Q 30 30 20 40 Q 10 30 0 20 Q 10 10 20 0 Z" fill="#ffffff" transform="translate(-20, -20)"/>
+  </g>
+
+  <!-- Film Strip / Prompt Generation Box -->
+  <rect x="250" y="340" width="300" height="42" rx="8" fill="rgba(15, 23, 42, 0.85)" stroke="url(#p6-ai)" stroke-width="1.5"/>
+  <text x="270" y="366" fill="#00d2ff" font-family="'Consolas', monospace" font-size="14">&gt; /imagine prompt:</text>
+  <text x="420" y="366" fill="#fbc2eb" font-family="'Consolas', monospace" font-size="14">synthwave dreams --v 6.0</text>
+
+  <!-- Overlay Text & Tag -->
+  <g transform="translate(40, 420)">
+    <rect width="180" height="34" rx="17" fill="rgba(168, 85, 247, 0.2)" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="90" y="22" fill="#d8b4fe" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13" text-anchor="middle">AI &amp; VIDEO TOOLS</text>
+  </g>
+  <text x="760" y="445" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="20" text-anchor="end">SynthWave Dreams AI Film</text>
+</svg>

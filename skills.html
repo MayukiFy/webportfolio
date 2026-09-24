@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="10 ทักษะและความเชี่ยวชาญด้านสื่อนฤมิตของ เมธาวี อัครศิลป์ (MayuiFy) ทั้ง Graphic, Motion, UI/UX, Web Design, HTML, CSS, JS และ AI">
+  <meta name="author" content="MayuiFy">
+  <title>Skills &amp; Capabilities | MayukiFy - Creative Media Student</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Custom CSS Files -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/skills.css">
+</head>
+
+<body>
+
+  <!-- ================================================================
+       0. PRELOADER ANIMATION
+       ================================================================ -->
+  <div id="preloader">
+    <div class="preloader-spinner">
+      <div class="spinner-ring"></div>
+      <div class="spinner-ring"></div>
+      <div class="spinner-ring"></div>
+    </div>
+    <div class="preloader-text">SKILLS &amp; CAPABILITIES</div>
+  </div>
+
+  <!-- ================================================================
+       1. NAVIGATION BAR
+       ================================================================ -->
+  <header>
+    <nav class="navbar-custom" id="mainNavbar">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- Logo Brand -->
+        <a href="index.html" class="navbar-brand-custom">
+          <div class="brand-icon-wrapper">
+            <i class="fa-solid fa-shapes"></i>
+          </div>
+          <div class="brand-text">Mayuki<span>Fy</span></div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="navbar-nav-custom d-none d-lg-flex">
+          <li><a href="index.html" class="nav-link-custom">Home</a></li>
+          <li><a href="about.html" class="nav-link-custom">About</a></li>
+          <li><a href="skills.html" class="nav-link-custom active">Skills</a></li>
+          <li><a href="portfolio.html" class="nav-link-custom">Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link-custom">Contact</a></li>
+        </ul>
+
+        <!-- Action Items -->
+        <div class="d-flex align-items-center gap-3">
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="สลับโหมดกลางวัน/กลางคืน">
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+          </button>
+          <button class="navbar-toggler-custom d-lg-none" id="navbarToggler" aria-label="เปิดเมนูนำทาง">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Offcanvas Menu -->
+    <div class="nav-backdrop" id="navBackdrop"></div>
+    <div class="nav-collapse-wrapper" id="navCollapse">
+      <div>
+        <div class="d-flex justify-content-between align-items-center pb-3 border-bottom border-secondary border-opacity-25">
+          <a href="index.html" class="navbar-brand-custom">
+            <div class="brand-icon-wrapper">
+              <i class="fa-solid fa-shapes"></i>
+            </div>
+            <div class="brand-text">Mayuki<span>Fy</span></div>
+          </a>
+          <button class="mobile-close-btn" id="navCloseBtn" aria-label="ปิดเมนูนำทาง">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <ul class="navbar-nav-custom">
+          <li><a href="index.html" class="nav-link-custom"><i class="fa-solid fa-house-chimney me-2 text-primary"></i> Home</a></li>
+          <li><a href="about.html" class="nav-link-custom"><i class="fa-solid fa-user-astronaut me-2 text-primary"></i> About</a></li>
+          <li><a href="skills.html" class="nav-link-custom active"><i class="fa-solid fa-cubes me-2 text-primary"></i> Skills</a></li>
+          <li><a href="portfolio.html" class="nav-link-custom"><i class="fa-solid fa-briefcase me-2 text-primary"></i> Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link-custom"><i class="fa-solid fa-paper-plane me-2 text-primary"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="pt-4 border-top border-secondary border-opacity-25">
+        <small class="text-muted d-block mb-2">Student of Creative Media</small>
+        <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-50 py-2 px-3 rounded-pill">
+          <i class="fa-solid fa-circle-check me-1"></i> พร้อมรับงานฝึกงาน 2026
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================================================================
+       2. PAGE BANNER HEADER
+       ================================================================ -->
+  <section class="page-banner">
+    <div class="container reveal">
+      <div class="page-breadcrumb">
+        <a href="index.html"><i class="fa-solid fa-house me-1"></i> หน้าแรก</a>
+        <span>/</span>
+        <span class="text-secondary fw-bold">My Skills</span>
+      </div>
+      <h1 class="page-banner-title">
+        ทักษะและ <span class="gradient-text">ความเชี่ยวชาญ 10 ด้าน</span>
+      </h1>
+      <p class="section-subtitle">
+        ครอบคลุมทั้งการออกแบบมัลติมีเดีย การถ่ายภาพ การตัดต่อวิดีโอ โมชันกราฟิก การพัฒนาหน้าเว็บ และการประยุกต์ใช้ AI
+      </p>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       3. 10 SKILLS SECTION
+       ================================================================ -->
+  <section class="skills-section pt-0" id="skills">
+    <div class="container">
+      <!-- Skills Category Filter Pills -->
+      <div class="skills-filter-container reveal">
+        <button class="skill-filter-pill active" data-filter="all">ทั้งหมด (All 10 Skills)</button>
+        <button class="skill-filter-pill" data-filter="design">Design &amp; UI/UX</button>
+        <button class="skill-filter-pill" data-filter="media">Video &amp; Motion</button>
+        <button class="skill-filter-pill" data-filter="web">Web Development</button>
+        <button class="skill-filter-pill" data-filter="ai">AI Innovation</button>
+      </div>
+
+      <!-- 10 Skills Grid -->
+      <div class="skills-grid">
+        <!-- 1. Graphic Design -->
+        <div class="glass-card skill-card skill-card-item reveal" data-category="design">
+          <div>
+            <div class="skill-card-top">
+              <div class="skill-icon-box icon-cyan-box">
+                <i class="fa-solid fa-pen-nib"></i>
+              </div>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+            <h4 class="skill-title">Graphic Design</h4>
+            <p class="skill-tools-text">Photoshop, Illustrator, InDesign, Brand Identity, Vector Art</p>
+          </div>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>ความเชี่ยวชาญ</span>
+              <span>92%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-percentage="92%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Photography -->
+        <div class="glass-card skill-card skill-card-item reveal reveal-delay-1" data-category="media">
+          <div>
+            <div class="skill-card-top">
+              <div class="skill-icon-box icon-pink-box">
+                <i class="fa-solid fa-camera-retro"></i>
+              </div>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+            <h4 class="skill-title">Photography</h4>
+            <p class="skill-tools-text">Portrait, Street, Studio Lighting, Color Grading in Lightroom</p>
+          </div>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>ความเชี่ยวชาญ</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-percentage="85%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Video Editing -->
+        <div class="glass-card skill-card skill-card-item reveal reveal-delay-2" data-category="media">
+          <div>
+            <div class="skill-card-top">
+              <div class="skill-icon-box icon-purple-box">
+                <i class="fa-solid fa-film"></i>
+              </div>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+            <h4 class="skill-title">Video Editing</h4>
+            <p class="skill-tools-text">Premiere Pro, DaVinci Resolve, Multicam, Audio Mixing</p>
+          </div>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>ความเชี่ยวชาญ</span>
+              <span>88%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-percentage="88%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Motion Graphic -->
+        <div class="glass-card skill-card skill-card-item reveal reveal-delay-3" data-category="media">
+          <div>
+            <div class="skill-card-top">
+              <div class="skill-icon-box icon-pink-box">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+            <h4 class="skill-title">Motion Graphic</h4>
+            <p class="skill-tools-text">After Effects, Cinema 4D, Kinetic Typography, Trapcode</p>
+          </div>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>ความเชี่ยวชาญ</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-percentage="90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. UI/UX Design -->
+        <div class="glass-card skill-card skill-card-item reveal" data-category="design">
+          <div>
+            <div class="skill-card-top">
+              <div class="skill-icon-box icon-cyan-box">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <span class="skill-level-badge">Expert</span>
+            </div>
+            <h4 class="skill-title">UI/UX Design</h4>
+            <p class="skill-tools-text">Figma, Wireframing, Interactive Prototyping, Usability Testing</p>
+          </div>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>ความเชี่ยวชาญ</span>
+              <span>94%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-percentage="94%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Web Design -->
+        <div class="glass-card skill-card skill-card-item reveal reveal-delay-1" data-category="design web">
+          <div>
+            <div class="skill-card-top">
+              <div class="skill-icon-box icon-emerald-box">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+            <h4 class="skill-title">Web Design</h4>
+            <p class="skill-tools-text">Responsive Layout, Design Systems, Glassmorphism, Mobile-First</p>
+          </div>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>ความเชี่ยวชาญ</span>
+              <span>91%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-percentage="91%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. HTML5 -->
+        <div class="glass-card skill-card skill-card-item reveal reveal-delay-2" data-category="web">
+          <div>
+            <div class="skill-card-top">
+              <div class="skill-icon-box icon-amber-box">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <span class="skill-level-badge">Expert</span>
+            </div>
+            <h4 class="skill-title">HTML5</h4>
+            <p class="skill-tools-text">Semantic HTML, Canvas API, Web Standards, Accessibility (a11y)</p>
+          </div>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>ความเชี่ยวชาญ</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-percentage="95%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. CSS3 -->
+        <div class="glass-card skill-card skill-card-item reveal reveal-delay-3" data-category="web">
+          <div>
+            <div class="skill-card-top">
+              <div class="skill-icon-box icon-cyan-box">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <span class="skill-level-badge">Expert</span>
+            </div>
+            <h4 class="skill-title">CSS3</h4>
+            <p class="skill-tools-text">Flexbox, CSS Grid, Custom Properties, Backdrop Filters, Keyframes</p>
+          </div>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>ความเชี่ยวชาญ</span>
+              <span>93%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-percentage="93%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. JavaScript -->
+        <div class="glass-card skill-card skill-card-item reveal" data-category="web">
+          <div>
+            <div class="skill-card-top">
+              <div class="skill-icon-box icon-amber-box">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+            <h4 class="skill-title">JavaScript</h4>
+            <p class="skill-tools-text">Modern ES6+, DOM Manipulation, Async/Await, Events, Web APIs</p>
+          </div>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>ความเชี่ยวชาญ</span>
+              <span>84%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-percentage="84%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. AI Tools -->
+        <div class="glass-card skill-card skill-card-item reveal reveal-delay-1" data-category="ai">
+          <div>
+            <div class="skill-card-top">
+              <div class="skill-icon-box icon-purple-box">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <span class="skill-level-badge">Creative Pro</span>
+            </div>
+            <h4 class="skill-title">AI Tools</h4>
+            <p class="skill-tools-text">Midjourney v6, Runway Gen-2, Topaz AI, ChatGPT Prompting, Generative Fill</p>
+          </div>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>ความเชี่ยวชาญ</span>
+              <span>92%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-percentage="92%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toolkit Showcase Cards -->
+      <div class="glass-card p-4 p-md-5 mt-5 reveal">
+        <h3 class="h4 fw-bold mb-4 text-center">
+          ชุดเครื่องมือสร้างสรรค์ <span class="gradient-text">Creative Toolset</span>
+        </h3>
+        <div class="row g-3 text-center">
+          <div class="col-4 col-md-2">
+            <div class="p-3 border rounded-3 bg-secondary bg-opacity-10 border-secondary border-opacity-25 h-100">
+              <i class="fa-brands fa-figma fs-2 text-primary mb-2"></i>
+              <div class="small fw-bold">Figma</div>
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="p-3 border rounded-3 bg-secondary bg-opacity-10 border-secondary border-opacity-25 h-100">
+              <i class="fa-solid fa-photo-film fs-2 text-secondary mb-2"></i>
+              <div class="small fw-bold">Adobe CC</div>
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="p-3 border rounded-3 bg-secondary bg-opacity-10 border-secondary border-opacity-25 h-100">
+              <i class="fa-solid fa-cubes fs-2 text-primary mb-2"></i>
+              <div class="small fw-bold">Blender 3D</div>
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="p-3 border rounded-3 bg-secondary bg-opacity-10 border-secondary border-opacity-25 h-100">
+              <i class="fa-solid fa-robot fs-2 text-secondary mb-2"></i>
+              <div class="small fw-bold">Midjourney</div>
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="p-3 border rounded-3 bg-secondary bg-opacity-10 border-secondary border-opacity-25 h-100">
+              <i class="fa-solid fa-code fs-2 text-primary mb-2"></i>
+              <div class="small fw-bold">VS Code</div>
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="p-3 border rounded-3 bg-secondary bg-opacity-10 border-secondary border-opacity-25 h-100">
+              <i class="fa-brands fa-bootstrap fs-2 text-secondary mb-2"></i>
+              <div class="small fw-bold">Bootstrap 5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Next Step CTA -->
+      <div class="text-center mt-5 reveal">
+        <a href="portfolio.html" class="btn-creative-primary px-5">
+          ชมผลงานที่นำทักษะเหล่านี้ไปใช้จริง (Portfolio) <i class="fa-solid fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       4. FOOTER
+       ================================================================ -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="mb-3">
+        <a href="index.html" class="navbar-brand-custom justify-content-center">
+          <div class="brand-icon-wrapper" style="width: 34px; height: 34px; font-size: 0.95rem;">
+            <i class="fa-solid fa-shapes"></i>
+          </div>
+          <div class="brand-text fs-5">Mayuki<span>Fy</span></div>
+        </a>
+      </div>
+      <p class="footer-text">&copy; 2026 My Portfolio &bull; All Rights Reserved.</p>
+      <p class="footer-credit">Designed by <span>MayukiFy</span> (Creative Media Student)</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="เลื่อนกลับขึ้นด้านบน" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/skills.js"></script>
+</body>
+</html>

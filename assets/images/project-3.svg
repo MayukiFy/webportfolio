@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p3-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e131f"/>
+      <stop offset="100%" stop-color="#1c132b"/>
+    </linearGradient>
+    <linearGradient id="p3-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d2ff"/>
+      <stop offset="50%" stop-color="#9b51e0"/>
+      <stop offset="100%" stop-color="#ff52a2"/>
+    </linearGradient>
+    <filter id="p3-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#p3-bg)"/>
+
+  <!-- Audio Equalizer Bars & Motion Wave -->
+  <g transform="translate(100, 260)" filter="url(#p3-glow)">
+    <!-- Audio Waveform -->
+    <path d="M 0 0 Q 75 -120 150 0 T 300 0 T 450 -140 T 600 0" fill="none" stroke="url(#p3-grad)" stroke-width="4"/>
+    <path d="M 0 0 Q 75 120 150 0 T 300 0 T 450 140 T 600 0" fill="none" stroke="url(#p3-grad)" stroke-width="2" opacity="0.6"/>
+  </g>
+
+  <!-- Sound Reactive Circular Nodes -->
+  <circle cx="400" cy="220" r="90" stroke="url(#p3-grad)" stroke-width="3" stroke-dasharray="8 12" fill="none" filter="url(#p3-glow)"/>
+  <circle cx="400" cy="220" r="60" stroke="#00d2ff" stroke-width="2" fill="none"/>
+  <circle cx="400" cy="220" r="35" fill="url(#p3-grad)"/>
+
+  <!-- Play Icon in center -->
+  <polygon points="392,205 415,220 392,235" fill="#ffffff"/>
+
+  <!-- Equalizer Vertical Bars on Bottom -->
+  <g transform="translate(180, 340)">
+    <rect x="0" y="-30" width="8" height="60" rx="4" fill="#00d2ff" opacity="0.7"/>
+    <rect x="20" y="-55" width="8" height="110" rx="4" fill="#00d2ff"/>
+    <rect x="40" y="-20" width="8" height="40" rx="4" fill="#00d2ff" opacity="0.6"/>
+    <rect x="60" y="-75" width="8" height="150" rx="4" fill="url(#p3-grad)"/>
+    <rect x="80" y="-45" width="8" height="90" rx="4" fill="url(#p3-grad)"/>
+    <rect x="100" y="-10" width="8" height="20" rx="4" fill="url(#p3-grad)"/>
+    <rect x="120" y="-60" width="8" height="120" rx="4" fill="url(#p3-grad)"/>
+    <rect x="320" y="-50" width="8" height="100" rx="4" fill="#ff52a2"/>
+    <rect x="340" y="-85" width="8" height="170" rx="4" fill="#ff52a2" filter="url(#p3-glow)"/>
+    <rect x="360" y="-35" width="8" height="70" rx="4" fill="#ff52a2"/>
+    <rect x="380" y="-65" width="8" height="130" rx="4" fill="#ff52a2" opacity="0.8"/>
+    <rect x="400" y="-25" width="8" height="50" rx="4" fill="#ff52a2" opacity="0.5"/>
+  </g>
+
+  <!-- Overlay Text & Tag -->
+  <g transform="translate(40, 420)">
+    <rect width="180" height="34" rx="17" fill="rgba(155, 81, 224, 0.2)" stroke="#9b51e0" stroke-width="1.5"/>
+    <text x="90" y="22" fill="#cf8bf3" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13" text-anchor="middle">MOTION GRAPHIC</text>
+  </g>
+  <text x="760" y="445" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="20" text-anchor="end">Pulse Beat Audio-Visual</text>
+</svg>

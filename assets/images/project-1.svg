@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p1-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="50%" stop-color="#0d2b45"/>
+      <stop offset="100%" stop-color="#203a43"/>
+    </linearGradient>
+    <linearGradient id="p1-mesh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d2ff"/>
+      <stop offset="50%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <filter id="p1-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#p1-bg)"/>
+  
+  <!-- Interactive 3D Grid Wave Visual -->
+  <g opacity="0.3" stroke="#00d2ff" stroke-width="1">
+    <line x1="100" y1="100" x2="700" y2="100"/>
+    <line x1="80" y1="160" x2="720" y2="160"/>
+    <line x1="60" y1="230" x2="740" y2="230"/>
+    <line x1="40" y1="310" x2="760" y2="310"/>
+    <line x1="20" y1="400" x2="780" y2="400"/>
+    <!-- vertical perspective lines -->
+    <line x1="400" y1="80" x2="100" y2="460"/>
+    <line x1="400" y1="80" x2="250" y2="460"/>
+    <line x1="400" y1="80" x2="400" y2="460"/>
+    <line x1="400" y1="80" x2="550" y2="460"/>
+    <line x1="400" y1="80" x2="700" y2="460"/>
+  </g>
+
+  <!-- Glowing Aurora Waves -->
+  <path d="M 0 320 Q 200 180, 400 280 T 800 220 L 800 500 L 0 500 Z" fill="#00d2ff" opacity="0.25" filter="url(#p1-glow)"/>
+  <path d="M 0 360 Q 250 240, 500 340 T 800 280 L 800 500 L 0 500 Z" fill="#ff52a2" opacity="0.2" filter="url(#p1-glow)"/>
+  
+  <!-- Browser Mockup Window -->
+  <rect x="180" y="80" width="440" height="280" rx="12" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <circle cx="205" cy="100" r="5" fill="#ff5f56"/>
+  <circle cx="225" cy="100" r="5" fill="#ffbd2e"/>
+  <circle cx="245" cy="100" r="5" fill="#27c93f"/>
+  <rect x="270" y="93" width="220" height="14" rx="7" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Inside Browser: 3D Torus / Sphere visual -->
+  <circle cx="400" cy="220" r="65" stroke="url(#p1-mesh)" stroke-width="4" fill="none" filter="url(#p1-glow)"/>
+  <ellipse cx="400" cy="220" rx="75" ry="30" stroke="#ff52a2" stroke-width="2.5" fill="none" transform="rotate(-25 400 220)"/>
+  <ellipse cx="400" cy="220" rx="75" ry="30" stroke="#00d2ff" stroke-width="2.5" fill="none" transform="rotate(35 400 220)"/>
+  <circle cx="400" cy="220" r="16" fill="url(#p1-mesh)"/>
+
+  <!-- Overlay Text & Tag -->
+  <g transform="translate(40, 420)">
+    <rect width="180" height="34" rx="17" fill="rgba(0, 210, 255, 0.2)" stroke="#00d2ff" stroke-width="1.5"/>
+    <text x="90" y="22" fill="#00d2ff" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13" text-anchor="middle">WEB DESIGN / 3D</text>
+  </g>
+  <text x="760" y="445" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="20" text-anchor="end">Aurora 3D Experience</text>
+</svg>
